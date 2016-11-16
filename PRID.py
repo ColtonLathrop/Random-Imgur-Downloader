@@ -1,7 +1,14 @@
 import random
 import string
 import urllib
+import os
 
+#find . -name "*.jpg"  -delete
+
+usrInput = raw_input('desired name of output folder:')
+if not os.path.exists(usrInput):
+    os.makedirs(usrInput)
+    os.chdir(usrInput)
 
 loop = 1
 while True:
@@ -13,11 +20,14 @@ while True:
     y = random.choice(string.letters+string.digits)
     z = random.choice(string.letters+string.digits)
     imgSeq = [u,v,w,x,y]
-    #this removes the spaces that occur in lists that separate our random character
+    #removes spaces from imgSeq and joins it with .jpg 'H5gFs.jpg'
     imgName = ''.join(imgSeq)+'.jpg'
     print imgName
-    #opens the url writes the data to the jpg
+    #queries imgur for imgName.jpg, writes, and saves it to disk
     webImg = urllib.urlopen("http://i.imgur.com/"+imgName)
     output = open(imgName, 'wb')
     output.write(webImg.read())
     output.close()
+    #removes files under a certain size that signifies 'file not found'
+    if os.path.getsize(imgName) < 1 * 1024:
+        os.remove(imgName)
