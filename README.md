@@ -1,13 +1,16 @@
 # Python-Random-Imgur-Downloader
 
-A simple program that downloads and saves images from via bruteforcing the file names.
+A simple program that randomizes an imgur link and downloaded the image in binary format. Then saves it and analyzes based on hexdecimal via imghdr to find filetype. 
 
-THIS IS POTENTIALLY NSFW AS IMAGES THAT ARE FOUND ARE RANDOM AND USER UPLOADED. USE WITH DISCRETION. 
+This program depends on random, urllib, imghdr, string, and os.
 
-This will randomly generate strings to insert into http://i.imgur.com/XXXXX.jpg
-Then download them into the directory the script was ran in.
+When running you are prompted to select the name of the directory that the program was started in.
+Then you will be prompted to select the batch size. (Must be an integer for obvious reasons)
 
-If you find any content deemed in violation of imgur TOS; please report to the following link.
+Functionality is only for 5 character imgur pictures, but the feature will be added to do 6 character (provides much slower results)
+
+If you find any content deemed in violation of imgur TOS please report to the following link;
 http://imgur.com/removalrequest
 
-You can view imgur TOS here; http://imgur.com/tos
+You can view imgur TOS here; 
+http://imgur.com/tos
