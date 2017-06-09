@@ -2,12 +2,20 @@
 
 A simple program that randomizes an imgur link and downloaded the image in binary format. Then saves it and analyzes based on hexdecimal via imghdr to find filetype. 
 
-This program depends on random, urllib, imghdr, string, and os.
+Please see import or requirements.txt for used libraries. 
 
-When running you are prompted to select the name of the directory that the program was started in.
-Then you will be prompted to select the batch size. (Must be an integer for obvious reasons)
+2.0.2:
+-added threading
+-removed user interface prompts
+-gathers images ~20 times faster
 
-Functionality is only for 5 character imgur pictures, but the feature will be added to do 6 character (provides much slower results)
+upcoming 2.1:
+-create gui
+-add it run times
+
+To adjust legth of imgur images requested I.E 4Gc45.jpeg or 6mNv3d.jpeg please modify the length variable under imports.
+To adjust output directory please modify the directory variable.
+
 
 If you find any content deemed in violation of imgur TOS please report to the following link;
 http://imgur.com/removalrequest
