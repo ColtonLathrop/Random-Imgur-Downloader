@@ -1,6 +1,6 @@
 # Python-Random-Imgur-Downloader
 
-A simple program that randomizes an imgur link and downloaded the image in binary format. Then saves it and analyzes based on hexdecimal via imghdr to find filetype. 
+A simple program that randomizes an imgur link and downloaded the image in binary format. Then saves it and analyzes based intial bytes.
 
 Please see import or requirements.txt for used libraries. 
 
