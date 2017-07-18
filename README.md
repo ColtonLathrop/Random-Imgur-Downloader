@@ -4,6 +4,9 @@ A simple program that randomizes an imgur link and downloaded the image in binar
 
 Please see import or requirements.txt for used libraries. 
 
+2.0.2.a:
+-added custom module for image ID; removing the requirement of imghdr.
+
 2.0.2:
 -added threading
 -removed user interface prompts
@@ -11,7 +14,7 @@ Please see import or requirements.txt for used libraries.
 
 upcoming 2.1:
 -create gui
--add it run times
+-add in run times
 
 To adjust legth of imgur images requested I.E 4Gc45.jpeg or 6mNv3d.jpeg please modify the length variable under imports.
 To adjust output directory please modify the directory variable.
